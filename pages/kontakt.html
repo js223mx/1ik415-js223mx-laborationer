@@ -26,8 +26,7 @@
         
                 <p>Mail: smedman.jenny{snabela}gmail.com</p>
                 
-                <form id="contact-form" action="script.php" method="post">
-                    <input type="hidden" name="redirect" value=http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php />
+                <form id="contact-form" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
                     <fieldset>
                         <legend>Fråga</legend>
                         Typ av ärende
@@ -35,21 +34,20 @@
                            <option value="Fråga">Fråga</option>
                            <option value="Komentar">Komentar</option>
                         </select><br>
-                        Ämne: <input type="text"><br>
-                        <label for="comments">Text:</label>
-                        <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+                        <label for="Ämne">Ämne</label>
+                        <input name="Ämne" id="Ämne" type="text"><br>
+                        <label for="Text">Text:</label>
+                        <textarea name="Text" id="Text" cols="25" rows="3"></textarea>
                     </fieldset>
-                </form>
-                <form>
                     <fieldset>
                         <legend>Hur vill du kontakta mig?</legend>
-                        <input type="radio" name="kontakttyp" value="Via mail">Via mail<br>
-                        <input type="radio" name="kontakttyp" value="Via telefon">Via telefon
+                        <input type="radio" name="Kontakttyp" value="Via mail">Via mail<br>
+                        <input type="radio" name="Kontakttyp" value="Via telefon">Via telefon
                     </fieldset>
-                </form>
-                <form name="input" action="" method="get">
-                      Namn: <input type="text" name="user">
-                      <input type="submit" value="Skicka">
+                       <fieldset>
+                           Namn: <input type="text" name="Namn">
+                          <input type="submit" value="Skicka">
+                       </fieldset>
                 </form>
                 
     </body>
