@@ -26,7 +26,8 @@
         
                 <p>Mail: smedman.jenny{snabela}gmail.com</p>
                 
-                <form>
+                <form id="contact-form" action="script.php" method="post">
+                    <input type="hidden" name="redirect" value=http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php />
                     <fieldset>
                         <legend>Fråga</legend>
                         Typ av ärende
@@ -35,7 +36,8 @@
                            <option value="Komentar">Komentar</option>
                         </select><br>
                         Ämne: <input type="text"><br>
-                        Fråga: <input type="text">
+                        <label for="comments">Text:</label>
+                        <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
                     </fieldset>
                 </form>
                 <form>
@@ -47,7 +49,7 @@
                 </form>
                 <form name="input" action="" method="get">
                       Namn: <input type="text" name="user">
-                      <input type="submit" value="Skicka fråga">
+                      <input type="submit" value="Skicka">
                 </form>
                 
     </body>
