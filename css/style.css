@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #FFFFCC;
+    min-height: 100% !important;
+    height: 100;
+}
+#container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navigation {
+    width: 180px;
+    float: left;
+    background-color: #C0C0C0;
+    height: 100%;
+    margin-right: 10px;
+}
+#content {
+    overflow: hidden;
+    background-color: #CC6699;
+    height: 100%;
+    font-family: "Times New Roman", Times, sans-serif;
+}
+#header {
+    background-color: #990066;
+    margin-bottom: 10px;
+}
+#footer {
+    background-color: #C0C0C0;
+    margin-top: 10px;
+}
+
