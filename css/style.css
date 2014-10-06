@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 body {
-    background-color: #FFFFCC;
+    background-color: #FFCCCC;
     min-height: 100% !important;
     height: 100;
 }
@@ -14,7 +14,7 @@ body {
 #navigation {
     width: 180px;
     float: left;
-    background-color: #C0C0C0;
+    background-color: #FFFFFF;
     height: 100%;
     margin-right: 10px;
 }
@@ -32,4 +32,43 @@ body {
     background-color: #C0C0C0;
     margin-top: 10px;
 }
+/* body backgroundcolor: #FFCCCC
+    navigation backgroundcolor: #FFFFFF
+    content backgroundcolor: #CC6699
+    header backgroundcolor: #990066
+    footer backgroundcolor: #C0C0C0 */
+
+div {
+    padding: 10px;
+    background-color: #E0E0E0;
+}
+ul {
+    list-style-type:none;
+    padding-left: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size: 150%;
+    border-bottom: 2px solid #000000;
+}
+h3 {
+    font-size: 125%;
+}
+p {
+    font-size: 80%;
+}
+#content a {
+    text-decoration: none;
+    color: #FFFFCC;
+}
+#content a:hover {
+    text-decoration: underline;
+}
+
+/*navigation/*
+
 
