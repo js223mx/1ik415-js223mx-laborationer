@@ -63,12 +63,30 @@ p {
 }
 #content a {
     text-decoration: none;
-    color: #FFFFCC;
+    color: #FFFFFF;
 }
 #content a:hover {
     text-decoration: underline;
 }
 
-/*navigation/*
+/*navigation---------------------------------------------------------*/
 
+#navigation a:hover {
+    background: #CC6699;
+	color: #fff;
+}
+#navigation a {
+    background: #990066;
+	border-bottom: 2px solid #393939;
+	color: #ccc;
+	display: block;
+	margin: 0px;
+	padding: 8px 12px;
+	text-decoration: none;
+	text-indent: 24px;
+}
+#navigation .active {
+    background-color: #B8CDD9;
+	color: #333;
+}
 
