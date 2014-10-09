@@ -19,10 +19,10 @@ body {
     margin-right: 10px;
 }
 #content {
-    overflow: hidden;
+    overflow: scroll;
     background-color: #CC6699;
     height: 100%;
-    font-family: "Times New Roman", Times, sans-serif;
+    font-family: "Tahoma", Geneva, sans-serif;
 }
 #header {
     background-color: #990066;
@@ -53,13 +53,34 @@ h1 {
 }
 h2 {
     font-size: 150%;
-    border-bottom: 2px solid #000000;
+    
 }
-h3 {
+h3:before {
     font-size: 125%;
-}
+} 
 p {
-    font-size: 80%;
+    font-size: 100%;
+    
+}
+.h3{
+    border-bottom: 2px solid #000000;
+    background-color:transparent;
+}
+.h3:before{
+    width: 46px;
+    height: 44px;
+    background: url("pics/texticon.png") no-repeat;
+    content:"";
+    float: left;
+    display: block;
+    margin: 5px 5px 5px 0;
+}
+#video
+{
+    margin-bottom:0px;
+}
+#blogg {
+    margin-bottom:0px;
 }
 #content a {
     text-decoration: none;
@@ -68,10 +89,10 @@ p {
 #content a:hover {
     text-decoration: underline;
 }
-
 /*navigation---------------------------------------------------------*/
 
-#navigation a:hover {
+#navigation a:hover
+{
     background: #CC6699;
 	color: #fff;
 }
@@ -86,7 +107,16 @@ p {
 	text-indent: 24px;
 }
 #navigation .active {
-    background-color: #FFFFFF;
-	color: #FFFFFF;
+    background-color: #CC6699;
+	color: #333;
 }
-
+/*table---------------------------------------------------------*/
+#table, td, th{
+    border:3px solid black;
+    background-color:white;
+    padding: 15px;
+}
+.list-title
+{
+    font-weight:bold;
+}
