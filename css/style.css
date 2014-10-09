@@ -67,13 +67,23 @@ p {
     background-color:transparent;
 }
 .h3:before{
+    background: url("pics/texticon.png") no-repeat;
     width: 46px;
     height: 44px;
-    background: url("pics/texticon.png") no-repeat;
     content:"";
     float: left;
     display: block;
     margin: 5px 5px 5px 0;
+}
+.welcome {
+    font-size: 250%;
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-weight: bold;
+}
+#signed {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 80%;
 }
 #video
 {
@@ -119,4 +129,11 @@ p {
 .list-title
 {
     font-weight:bold;
+}
+/*images---------------------------------------------------------*/
+#daisy {
+    float: right;
+    padding:1px;
+    border:3px solid #990066;
+    background-color:#990066;
 }
