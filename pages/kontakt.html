@@ -33,27 +33,27 @@
                     392 38 Kalmar
                 </p>
                 
-                <form id="contact-form" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
-                    <fieldset>
-                        <legend>Fråga</legend>
-                        Typ av ärende
-                        <select>
+                
+                <form id="contactform" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="post">
+                    <fieldset id=fieldset>
+                        <legend id="legend">Fråga</legend>
+                        Typ av ärende:
+                        <select id="select">
                            <option value="Fråga">Fråga</option>
                            <option value="Komentar">Komentar</option>
                         </select><br>
-                        <label for="Ämne">Ämne</label>
+                        <label for="Ämne">Ämne:</label>
                         <input name="Ämne" id="Ämne" type="text"><br>
-                        <label for="Text">Text:</label>
+                        <label for="Textlabel" id="Textlabel">Text:</label>
                         <textarea name="Text" id="Text" cols="25" rows="3"></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Hur vill du kontakta mig?</legend>
+                    
+                        <legend id="legend">Hur vill du kontakta mig?</legend>
                         <input type="radio" name="Kontakttyp" value="Via mail">Via mail<br>
-                        <input type="radio" name="Kontakttyp" value="Via telefon">Via telefon
-                    </fieldset>
-                       <fieldset>
-                           Namn: <input type="text" name="Namn">
-                          <input type="submit" value="Skicka">
+                        <input type="radio" name="Kontakttyp" value="Via telefon">Via telefon<br>
+                       
+                           Namn: <input type="text" name="Namn" id="name"><br>
+                          <input type="submit" value="Skicka" id="submit">
+                     
                        </fieldset>
                 </form>
                 </div>
