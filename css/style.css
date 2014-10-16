@@ -179,3 +179,35 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*printing---------------------------------------------------------*/
+@media print 
+{
+#header{
+    display: none;
+}
+#navigation{
+    display: none;
+}
+#footer {
+    display: none;
+}
+#content {
+    overflow: visible;
+}
+a:after{
+    content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;
+}
+#videon {
+    display: none;
+}
+#jag{
+    display: none;
+}
+#daisy {
+    display: none;
+}
+#contactform {
+    display: none;
+}
+}
