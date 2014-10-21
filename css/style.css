@@ -121,14 +121,61 @@ p {
     background-color: #CC6699;
 	color: #333;
 }
+.navlist {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.navlist li {
+    list-style-type: none;
+    padding-top: 0;
+    padding-left: 3px;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    position: relative;
+}
+.navlist li:before {
+  position: absolute;
+  margin: 8px 0 0 7px;
+  min-height: 30px;
+  background: url(sprite.png) no-repeat;
+  width: 24px;
+  content:"";
+  vertical-align: middle;
+}
+navlist li.home:hover:before {
+     background-position: 0px 0px;
+     }
+.navlist li.home:before {
+     background-position: 0px -48px;
+     }
+.navlist li.pres:before {
+     background-position: 0px -240px;
+     }
+.navlist li.pres:hover:before {
+     background-position: 0px -192px;
+     }
+.navlist li.lab:before {
+     background-position: 0px -144px;
+     }
+.navlist li.lab:hover:before {
+     background-position: 0px -96px;
+     }     
+.navlist li.kon:before {
+     background-position: 0px -336px;
+     }
+.navlist li.kon:hover:before {
+     background-position: 0px -288px;
+} 
+
+
 /*table---------------------------------------------------------*/
-#table, td, th{
+#table, td, th {
     border:3px solid black;
     background-color:white;
     padding: 15px;
 }
-.list-title
-{
+.list-title {
     font-weight:bold;
 }
 
@@ -143,7 +190,6 @@ p {
     width: 400px;
     height: 300px;
     background-color: #FFFFFF;
-    
 }
 #select {
     margin-bottom: 12px;
