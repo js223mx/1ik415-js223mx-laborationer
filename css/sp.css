@@ -76,31 +76,36 @@ ul {
 	color: #fff;
 }
 #navigation a {
-    text-decoration:none;
+    background: #990066;
+	border-bottom: 2px solid #393939;
+	color: #ccc;
+	display: block;
+	margin: 0px;
+	padding: 8px 12px;
+	text-decoration: none;
+	text-indent: 24px;
+}
+#navigation .active {
+    background-color: #CC6699;
+	color: #333;
 }
 .navlist {
-    padding-left:0;
-    text-align:center;
-    background-color:Black;
-    margin:0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
-.navlist li{
+.navlist li {
+    list-style-type: none;
+    padding-top: 0;
     
-    display:inline-block;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    position: relative;
 }
-.navlist li a {
-    background-color:#990066;
-    font-size:13px;
-}
-#navigation a: active {
-    background-color: #CC6699;
-}
+
 /*table---------------------------------------------------------*/
-#table, td, th {
-    display:none;
-}
-.list-title {
-    font-weight:bold;
+table {
+    display: none;
 }
 
 /*form---------------------------------------------------------*/
@@ -110,9 +115,12 @@ ul {
     margin-bottom: 12px;
 }
 #fieldset {
-    border: 5px solid black;
-    width: 400px;
-    height: 300px;
+    
+    width: 100%;
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:0px;
+    margin-right:0px;
     background-color: #FFFFFF;
 }
 #select {
