@@ -7,47 +7,39 @@
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>Jenny Smedmans webbsida</title>
           
-            <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/sp.css" />
-            <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/style.css" />
+            <link rel="stylesheet" media="screen and (max-width: 480px)" href="../css/sp.css" />
+            <link rel="stylesheet" media="screen and (min-width: 481px)" href="../css/lab5.css" />
             
             
   </head>
-    </head>
     <body>
-    <div id="container">
-            
-            <div id="header">
+    
+    <header id="header">
             <div class="loggodiv"></div>
-            </div>
+            </header>
+    
+    <main>
+            <nav id="navside">
+            <a href="../index.html" class="active">Startsida</a>
+            <a href="presentation.html">Presentation</a>
+            <a href="laborationer.html">Laborationer</a>
+            <a href="kontakt.html">Kontakt</a>
+            </nav>
             
-            
-            
-           
-            <div id="navigation">
-            <div id="navmenu">
-            <ul class="navlist">
-                <li class="home"><a href="index.html" class="active">Startsida</a></li>
-                <li class="pres"><a href="pages/presentation.html">Presentation</a></li>
-                <li class="lab"><a href="pages/laborationer.html">Laborationsportal</a></li>
-                <li class="kon"><a href="pages/kontakt.html">Kontakt</a></li>
-            </ul>
-            </div>
-            </div>
-            
-            <div id="content">
+            <section>
             
             <h2>Kursblogg</h2>
             
-            <div class="h3">
+            <article>
                 <h3 id="blogg">Copycat</h3>
                 <p>Nu är jag klar med laboration 3. Här är en länk såm ni kan klicka på för att se resultatet.<br>
                     <a href="https://preview.c9.io/js223mx/uppgift-3-3/index.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">Länk till laboration 3.</a>
                 </p>
-            </div>
+                <p id="signed">Skrivet av Jenny Smedman, 2014-11-04</p>
+            </article>
             
-                <div class="h3">
+            <article>
                     <h3 id="blogg">Mopsen</h3>
-                </div>
                     <p>För er som har läst min presentation så vet ni att jag har en liten mops som heter daisy.
                         För att ni ska förstå vilken underbar hundras det är så tänkte jag skriva några rader om Daisy och rasen mops.
                     </p>
@@ -56,7 +48,10 @@
                         kompakta kropp och platta ansikte. Mopsen är glad, iteligent och livlig. Mopsen är även en lättlärd hundras som passar
                         perfekt som första hund.
                     </p>
-                    <img id="daisy" src="pics/daisy.jpg" alt="Detta är daisy" height="300" width="200" class="right" />
+                    <figure class="right top">
+                        <img src="../pics/daisy.jpg" alt="Detta är daisy." height="300" width="200" />
+                        <figcaption>Detta är en bild på Daisy våren 2014.</figcaption>
+                    </figure>
                     
                     <p>Jag har haft min mops Daisy i 2 år snart. När jag hämtade henne var hon inte större än min handflata. Jag har alltid velat ha hund
                         men pågrund av att min pappa är alergisk så kunde inte detta bli av förrän jag flyttade hemmifrån. När jag flyttade från Norrtälje till
@@ -68,10 +63,9 @@
                         svåra tider och beslut. Hon är min bästa vän och vad som än händer så kan jag alltid lita på att hon blir lika glad när hon ser mig.
                     </p>
                     <p id="signed">Skrivet av Jenny Smedman, 2014-10-09</p>
-                
-                <div class="h3">
+            
+            <article>
                 <h3 id="video">Videotaggen</h3>
-                </div> 
                     
                     <video controls width="320" height="240" preload="none" id="videon">
                         <source src="http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg" type="video/ogg" />
@@ -82,38 +76,44 @@
                     <p>Video med tillstånd av
                         <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>
                     </p>
-                    <p id="signed">Skrivet av Jenny Smedman, 2014-10-02</p>
-                    
-                <div class="h3">
+                   <p id="signed">Skrivet av Jenny Smedman, 2014-10-02</p>
+            </article>
+            
+            <article>       
                 <h3 id="blogg">En ankarlänk</h3>
-                </div>
+                
                     <p>Här kommer en länk till min bild som ligger på presentationssidan.</p><br>
-                    <a href="pages/presentation.html#jag">Länk till min bild</a>
+                    <a href="presentation.html#jag">Länk till min bild</a>
                     <p id="signed">Skrivet av Jenny Smedman, 2014-10-01</p>
-                      
-                <div class="h3">  
+            </article>         
+            
+            <article>        
                 <h3 id="blogg">En svg-bild</h3>
-                </div>
                 
                     <p>Nu har jag skapat en svg-bild (Scalable Vector Graphics).</p>
-                    <img id="svgbild" src="pics/svgbild.svg" alt="Lite former" />
-                    <p id="signed">Skrivet av Jenny Smedaman, 2014-09-30</p>
-                 
-                <div class="h3">    
+                    <img id="svgbild" src="../pics/svgbild.svg" alt="Lite former" />
+                <p id="signed">Skrivet av Jenny Smedaman, 2014-09-30</p>
+            </article>
+            
+            <article>    
                 <h3 id="blogg">Ett första inlägg</h3> 
-                </div>
+                
                     <p>Hej alla! Detta är mitt första blogginlägg på min nya webbsida. Här kommer jag skriva lite om
                     de laborationer jag gör och hur det går för mig som nybliven student vid webbprogrammerarprogrammet.
                     </p>
-                    <p id="signed">Skrivet av Jenny, 2014-09-22</p>
-                   
-             </div>
-             
-             <div id="footer">
-             <p>Ansvarig för materialet på denna sida är Jenny Smedman</p>
-             </div>
-             
-        </div>
+                <p id="signed">Skrivet av Jenny, 2014-09-22</p>
+            </article>  
+            
+            <section id=aside>
+                <aside>
+                    <h2>Aside</h2>
+                    <p>Nå mig på facebook</p>
+                </aside>
+            </section>
+             </section>
+        </main>
+        
+        <footer id="ccfooter">Ansvarig för materialet på denna sida är Jenny Smedman</footer>
     </body>
     
 </html>
