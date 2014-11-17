@@ -151,3 +151,16 @@ table {
     border:3px solid #990066;
     background-color:#990066;
 }
+.vcard {
+    background-color: #CC6699;
+    font-weight:bold;
+}
+.add {
+    background-color: #CC6699;
+}
+.tele {
+    background-color: #CC6699;
+}
+.mail{
+   background-color: #CC6699; 
+}

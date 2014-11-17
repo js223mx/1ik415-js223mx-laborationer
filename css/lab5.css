@@ -8,12 +8,16 @@ body{
     min-height: 100% !important;
     height: 100;
 }
+#container{
+    margin: 0 auto;
+    width: 960px;
+}
 #header{
    height: 132px;
-   width:943px;
+   width:942px;
    padding: 10px;
-   margin-left: 335px;
-   margin-right:auto;
+   
+   
    margin-bottom: 7px;
    background-color: #990066;
    
@@ -38,7 +42,7 @@ main{
     
 }
 
-nav{
+#navside{
     width: 180px;
     float: left;
     background-color: #FFFFFF;
@@ -47,7 +51,7 @@ nav{
     margin-top:10px;
     border:2px solid black;
 }
-nav a{
+#navside a{
     background: #990066;
 	border-bottom: 2px solid black;
 	color: #ccc;
@@ -57,12 +61,12 @@ nav a{
 	text-decoration: none;
 	text-indent: 24px;  
 }
-nav a:hover
+#navside a:hover
 {
     background: #CC6699;
 	color: #fff;
 }
-nav .active {
+#navside .active {
     background-color: #CC6699;
 	color: #333;
 }
@@ -78,24 +82,23 @@ section{
 article{
     
 }
-aside{
+#aside{
  display:block;
  height:120px;
  width:145px;
  background-color:#FFFFFF;
  border: 2px solid black;
  padding: 5px; 
- float:right;
+ float:left;
 }
 #aside{
     width:181px;
 }
-footer{
+#ccfooter{
     background-color: #C0C0C0;
     font-style: oblique;
     font-weight: bold;
     font-size: 100%;
-    margin-left: 335px;
     height:30px;
     width:963px;
 }
