@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+#container{
+    background-color: #FFCCCC;
+    width: 100%;
+    
+}
+body{
+     background-color: #FFCCCC;
+}
+#side{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    float: right;
+    width: 490px;
+    height: 1952px;
+    overflow: hidden;
+    padding: 20px;
+    border-left: 3px dashed grey;
+    background-color:  #FFCCCC;
+}
+img{
+    border: solid black;
+    width: 100%;
+}
+#images{
+    float: left;
+    width: 800px;
+    margin-left:200px;
+    margin-top: 30px;
+}
+
+#images a {
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px 12px 38px 12px;
+    display: block;
+    width: 280px;
+    float:left;
+    margin-right:50px;
+    box-shadow: 5px 5px 10px #606060;
+    transition-duration: 0,9s;
+    transition-property: all;
+    background-color: #FFFFFF;
+}
+#images a:after{
+    content: attr(title);
+    color: black;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+#images a:nth-child(3n+3){/*Roterar var 3:e bild*/
+   -webkit-transform:rotate(-5deg);
+   transform:rotate(-5deg);
+}
+#images a:nth-child(2n+1) { /* Roterar varannan bild*/
+    -webkit-transform:rotate(8deg);
+    transform:rotate(8deg);
+}
+#images a:nth-child(4n+2) { /* Roterar var 4:e bild */
+    -webkit-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+#images a:hover, a:focus {
+    position: relative;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 1; /* växlar plats på bilderna */
+    
+    -webkit-box-shadow: 15px 15px 40px #606060;
+    -ms-box-shadow: 15px 15px 40px #606060;
+    -moz-box-shadow: 15px 15px 40px #606060;
+    -o-box-shadow: 15px 15px 40px #606060;
+    box-shadow: 15px 15px 40px #606060;
+}
