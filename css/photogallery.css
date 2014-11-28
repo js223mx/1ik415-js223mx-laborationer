@@ -54,21 +54,33 @@ img{
 }
 #images a:nth-child(3n+3){/*Roterar var 3:e bild*/
    -webkit-transform:rotate(-5deg);
+   -ms-transform:rotate(-5deg);
+   -moz-transform:rotate(-5deg);
+   -o-transform:rotate(-5deg);
    transform:rotate(-5deg);
 }
 #images a:nth-child(2n+1) { /* Roterar varannan bild*/
     -webkit-transform:rotate(8deg);
+    -ms-transform:rotate(8deg);
+    -moz-transform:rotate(8deg);
+    -o-transform:rotate(8deg);
     transform:rotate(8deg);
 }
 #images a:nth-child(4n+2) { /* Roterar var 4:e bild */
     -webkit-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
     transform:rotate(-10deg);
 }
 #images a:hover, a:focus {
     position: relative;
     -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
     transform: scale(1.5);
-    z-index: 1; /* växlar plats på bilderna */
+    z-index: 1; /* ser till att bilden man håller musen över hamnar överst */
     
     -webkit-box-shadow: 15px 15px 40px #606060;
     -ms-box-shadow: 15px 15px 40px #606060;
