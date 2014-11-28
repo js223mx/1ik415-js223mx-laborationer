@@ -131,3 +131,13 @@ main a:hover {
 figure{
     float:right;
 }
+.comments{
+    display: block;
+    background-color: #FF99CC;
+    width: 695px;
+}
+.c1{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding:4px;
+}
